@@ -33,7 +33,7 @@ export default function LoginPage() {
           router.push('/wheel'); // Khách vào trang vòng quay
         }
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
       setError("Sai tài khoản hoặc mật khẩu rồi bạn ơi!");
     } finally {
